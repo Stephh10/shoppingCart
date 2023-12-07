@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <h1>LOGO</h1>
+        <h1>My Cart</h1>
+    </div>
+    <div class="container">
+        <div class="grid-area">
+            <div class="card">
+                <div>
+                    <h3>Krompir</h3>
+                    <h4 price> $50</h4>
+                </div>
+                <div class="input-btn">
+                    <input class="input" type="number" name="input" min="0" max="10">
+                    <button onclick="addItems(this)">Add to Cart</button>
+                </div>
+
+            </div>
+            <div class="card">
+                <div>
+                    <h3>Mango</h3>
+                    <h4 price> $20</h4>
+                </div>
+                <div class="input-btn">
+                    <input class="input" type="number" name="input" min="0" max="10">
+                    <button onclick="addItems(this)">Add to Cart</button>
+                </div>
+
+            </div>
+            <div class="card">
+                <div>
+                    <h3>Ananas</h3>
+                    <h4 price> $10</h4>
+                </div>
+                <div class="input-btn">
+                    <input class="input"  type="number" name="input" min="0" max="10">
+                    <button onclick="addItems(this)">Add to Cart</button>
+                </div>
+
+            </div>
+        </div>
+        <div class="cart-area">
+            <div>
+                <div class="my-items">My Items:</div>
+                <div class="messageEl"> Cart is Empty</div>
+                <table class="tableArea">
+                </table>
+            </div>
+            <div></div>
+            <div class="newCon">
+                <div></div>
+                <div class="total">0$</div>
+                <button class="orderBtn hide">Confirm</button>
+                <!-- <div class="newEl"></div> -->
+            </div>
+           
+            
+        </div>
+      
+    </div>
+    <div class="footer">
+        <p>Created by Stefan</p>
+    </div>
+
+    <template tableTemplate>
+        <tr class="tableRow">
+            <td name></td>
+            <td price></td>
+            <td><button class="btn-sml" >Remove</button></td>
+        </tr>
+    </template>
+    <script src="index.js"></script>
+</body>
+</html>
